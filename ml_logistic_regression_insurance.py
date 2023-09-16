@@ -46,6 +46,8 @@ print(X_test[0:10])
 print(lr.predict(X_test[0:10]))
 print(y_test[0:10])
 
+print('Accuracy: ', lr.score(X_test, y_test)*100, '%')
+
 import seaborn as sns
 sns.pairplot(dataset[['age','sex','bmi','children','smoker','charges', 'region']], hue='region')
 
